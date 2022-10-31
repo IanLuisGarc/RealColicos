@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea S11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <!--Ejercicio 1-->
+    <div class="trabajador">
+
+        <h2>Ejercicio 1</h2>
+
+        <form>
+            <label for="name">
+                Nombre del trabajador:
+                <input type="text" id="name">
+            </label>
+
+            <label for="sueldoBase">
+                Sueldo base:
+                <input type="number" id="sueldoBase">
+            </label>
+
+            <label for="hijos">
+                ¿Tiene hijos? :
+                <input type="radio" name="interesado" value="si" id="si" checked> Sí
+                <input type="radio" name="interesado" value="no" id="no"> No
+            </label>   
+
+            <label for="nHijos">
+                ¿Cuántos? :
+                <input type="number" name="nHijos" id="nh">
+            </label> 
+
+            <!--Invocando la función trabajador() al hacer click-->
+            <input type="submit" value="Calcular sueldo final" onclick='trabajador()'>
+        </form>
+
+    </div>  
+
+    <!--Ejercicio 2-->
+    <div class="numero">
+
+        <h2>Ejercicio 2</h2>
+
+        <form>
+            <label for="numero">
+                Ingrese el número:
+                <input type="number" id="number">
+            </label>
+
+            <!--Invocando la función numero() al hacer click-->
+            <input type="submit" value="Registrar" onclick='numero()'>
+        </form>
+    
+    </div>
+
+    <!--Ejercicio 3-->
+    <div class="fact">
+
+        <h2>Ejercicio 3</h2>
+
+        <form>
+            <label for="factorial">
+                Ingrese el número:
+                <input type="number" id="factorial">
+            </label>
+
+            <!--Invocando la función facto() al hacer click-->
+            <input type="submit" value="Calcular" onclick='facto()'>
+        </form>
+
+    </div>
+
+    <!--Archivo javascript-->
+    <script src="ejercicios.js"></script>
+</body>
+</html>
